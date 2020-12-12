@@ -8,7 +8,7 @@ For locking use [`xss-lock`](https://www.archlinux.org/packages/community/x86_64
 
 Uses [`feh`](https://www.archlinux.org/packages/extra/x86_64/feh/) to setup wallpapers
 
-Uses [`terminator`](# Terminal Emulators) as the main terminal
+Uses [`terminator`](#Terminal_Emulators) as the main terminal
 
 ## Compositor
 [`compton-tryone-git`](https://aur.archlinux.org/packages/compton-tryone-git/)
@@ -21,7 +21,7 @@ Uses [`terminator`](# Terminal Emulators) as the main terminal
 ## Shells
 [`zsh`](https://www.archlinux.org/packages/extra/x86_64/zsh/)
 
-`~/.zshrc` is already preconfigured to use the following plugins/themes (it uses the ~/.p10k.zsh` file as theme so that file is also needed along with the theme (see [Powerlevel10k](# Powelevel10k))
+`~/.zshrc` is already preconfigured to use the following plugins/themes (it uses the `~/.p10k.zsh` file as theme so that file is also needed along with the theme (see [`Powerlevel10k`](#Powelevel10k))
 
 ### Themes and Plugins
 Zsh Manager
@@ -73,3 +73,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/p
 [`neofetch`](https://www.archlinux.org/packages/community/any/neofetch/)
 
 To display images install [`w3m`](https://www.archlinux.org/packages/extra/x86_64/w3m/) and use with `neofetch --w3m /path/to/image` (see example `~/.zshrc`)
+
