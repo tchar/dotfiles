@@ -1,0 +1,28 @@
+[global_config]
+  title_transmit_fg_color = "#f1ebeb"
+  title_transmit_bg_color = "#48483e"
+  title_inactive_fg_color = "#f1ebeb"
+  title_inactive_bg_color = "#76715e"
+[keybindings]
+[profiles]
+  [[default]]
+    background_color = "#272822"
+    background_darkness = 0.0
+    background_type = transparent
+    cursor_color = "#f1ebeb"
+    font = MesloLGS NF 10
+    foreground_color = "#f1ebeb"
+    show_titlebar = False
+    scrollbar_position = hidden
+    palette = "#48483e:#dc2566:#8fc029:#d4c96e:#62a0ea:#ff36e1:#56b7a5:#acada1:#76715e:#fa2772:#a7e22e:#e7db75:#66d9ee:#ff91ef:#66efd5:#cfd0c2"
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]

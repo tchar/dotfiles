@@ -1,0 +1,4 @@
+configuration{
+	theme: "neon-dark";
+	show-icons: true;
+}
