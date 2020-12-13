@@ -8,7 +8,7 @@ fi
 eval "$(ssh-agent)"
 
 export XDG_DATA_DIRS=$HOME/.local/share:/usr/local/share:/usr/share
-export EDITOR=vim
+export EDITOR=nvim
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 
 xset s on

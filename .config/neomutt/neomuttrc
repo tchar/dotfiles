@@ -1,11 +1,21 @@
-source ~/.config/neomutt/sidebar.neomutt
 
 ## General options
+set mailcap_path = "~/.config/neomutt/mailcap"
 set imap_check_subscribed
 set imap_keepalive = 300
 unset imap_passive
 set mail_check = 3600
+
 #set mbox_type = Maildir
+
+# prefer plain text
+alternative_order text/plain text/enriched text/html
+
+# auto convert text/html MIME type to text/plain
+auto_view text/html
+
+# Load sidebar
+source ~/.config/neomutt/sidebar
 
 # Folder hooks
 folder-hook 'account.personal' 'source ~/.config/neomutt/account.personal'
