@@ -134,16 +134,16 @@ layout_defaults = dict(
 layouts = [
     layout.Bsp(**layout_defaults),
     layout.Max(**layout_defaults),
-    # layout.Stack(num_stacks=2, **layout_defaults),
-    # layout.Columns(**layout_defaults),
-    # layout.Matrix(**layout_defaults),
-    layout.MonadTall(**layout_defaults),
-    layout.MonadWide(**layout_defaults),
-    layout.RatioTile(**layout_defaults),
-    layout.Tile(**layout_defaults),
-    layout.TreeTab(**layout_defaults),
-    layout.VerticalTile(**layout_defaults),
-    layout.Zoomy(**layout_defaults),
+    #layout.Stack(num_stacks=2, **layout_defaults),
+    #layout.Columns(**layout_defaults),
+    #layout.Matrix(**layout_defaults),
+    #layout.MonadTall(**layout_defaults),
+    #layout.MonadWide(**layout_defaults),
+    #layout.RatioTile(**layout_defaults),
+    #layout.Tile(**layout_defaults),
+    #layout.TreeTab(**layout_defaults),
+    #layout.VerticalTile(**layout_defaults),
+    #layout.Zoomy(**layout_defaults),
 ]
 
 widget_defaults = dict(

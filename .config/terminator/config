@@ -6,15 +6,13 @@
 [keybindings]
 [profiles]
   [[default]]
-    background_color = "#272822"
-    background_darkness = 0.0
     background_type = transparent
-    cursor_color = "#f1ebeb"
+    cursor_color = "#ffffff"
     font = MesloLGS NF 10
-    foreground_color = "#f1ebeb"
+    foreground_color = "#ffffff"
     show_titlebar = False
     scrollbar_position = hidden
-    palette = "#48483e:#dc2566:#8fc029:#d4c96e:#62a0ea:#ff36e1:#56b7a5:#acada1:#76715e:#fa2772:#a7e22e:#e7db75:#66d9ee:#ff91ef:#66efd5:#cfd0c2"
+    palette = "#48483e:#dc2566:#8fc029:#d4c96e:#62a0ea:#d026b6:#56b7a5:#acada1:#76715e:#fa2772:#a7e22e:#e7db75:#66d9ee:#ff69e9:#66efd5:#cfd0c2"
     use_system_font = False
 [layouts]
   [[default]]

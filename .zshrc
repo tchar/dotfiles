@@ -114,3 +114,4 @@ source $ZSH/oh-my-zsh.sh
 alias fucking="sudo"
 alias please="sudo"
 alias nnn="nnn -de"
+export COLORFGBG="default;default"

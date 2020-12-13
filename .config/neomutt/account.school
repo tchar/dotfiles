@@ -1,0 +1,25 @@
+## Receive options.
+set imap_user = "`secret-tool lookup email.school username`@`secret-tool lookup school domain`"
+set imap_pass = `secret-tool lookup email.school password`
+set folder = "imaps://`secret-tool lookup school imap`/"
+set spoolfile = "+Inbox"
+set postponed = "+Drafts"
+set record = "+Sent Items"
+
+mailboxes "+Inbox"
+
+## Send options.
+set smtp_url  = "smtps://`secret-tool lookup email.school username`@`secret-tool lookup school smtp`"
+set smtp_pass = `secret-tool lookup email.school password`
+set from = "`secret-tool lookup email.school username`@`secret-tool lookup school domain`"
+set hostname = `secret-tool lookup school domain`
+set realname = "`secret-tool lookup name myname`"
+set signature = "`secret-tool lookup name myname`"
+# Connection options
+set ssl_force_tls = yes
+unset ssl_starttls
+
+set header_cache = ~/.cache/neomutt/account.school/headers    
+set message_cachedir = ~/.cache/neomutt/account.school/bodies    
+
+#account-hook $folder "set imap_user=`secret-tool lookup email.school username`@`secret-tool lookup school domain` imap_pass=`secret-tool lookup email.school password`"

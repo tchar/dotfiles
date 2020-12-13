@@ -8,6 +8,9 @@ rsync -v -r ~/.config/neofetch .config
 rsync -v -r --exclude '__pycache__' --exclude '*.pyc' ~/.config/qtile .config
 rsync -v -r ~/.config/terminator .config
 
+rsync -v -r --exclude accounts.conf ~/.config/aerc .config
+rsync -v -r ~/.config/neomutt .config
+
 rsync -v -r ~/.local/share/backgrounds/6.png .local/share/backgrounds
 rsync -v -r ~/.local/share/fonts .local/share
 

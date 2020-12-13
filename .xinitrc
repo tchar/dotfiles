@@ -5,8 +5,11 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
-export XDG_DATA_DIRS=~/.local/share:/usr/local/share:/usr/share
+eval "$(ssh-agent)"
+
+export XDG_DATA_DIRS=$HOME/.local/share:/usr/local/share:/usr/share
 export EDITOR=vim
+export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 
 xset s on
 # For dimming the screen

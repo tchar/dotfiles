@@ -1,0 +1,50 @@
+source ~/.config/neomutt/sidebar.neomutt
+
+## General options
+set imap_check_subscribed
+set imap_keepalive = 300
+unset imap_passive
+set mail_check = 3600
+#set mbox_type = Maildir
+
+# Folder hooks
+folder-hook 'account.personal' 'source ~/.config/neomutt/account.personal'
+folder-hook 'account.school' 'source ~/.config/neomutt/account.school'
+
+# Accounts
+#source ~/.config/neomutt/account.school
+source ~/.config/neomutt/account.personal
+
+# Macros for switching accounts
+macro index <f2> '<sync-mailbox><enter-command>source ~/.config/neomutt/account.personal<enter><change-folder>!<enter>'
+#macro index <f3> '<sync-mailbox><enter-command>source ~/.config/neomutt/account.school<enter><change-folder>!<enter>'
+
+# Fetch mail shortcut
+bind index G imap-fetch-mail
+
+# Colors
+color hdrdefault cyan default
+color attachment yellow default
+
+color header brightyellow default "^(From|To|Cc|Bcc)"
+color header brightyellow default "Subject: "
+color header brightyellow default "Date: "
+
+color quoted green default
+color quoted1 cyan default
+color quoted2 green default
+color quoted3 cyan default
+
+color error     brightred       default         # error messages
+color message   brightdefault   default         # message  informational messages
+color indicator brightdefault   magenta         # indicator for the "current message"
+color status   	brightdefault   magenta         # status lines in the folder index sed for the mini-help line
+color tree      red 		    default         # the "tree" display of threads within the folder index
+color search    brightdefault   blue            # search matches found with search within the internal pager
+color markers   red            	default         # The markers indicate a wrapped line hen showing messages with looong lines
+
+color index		brightcolor15 	default		'~A'	# All messages
+color index     brightyellow 	default  	'~O'
+color index     brightyellow 	default  	'~N'
+color index     brightred       default 	'~F'    # Flagged Messages
+color index     blue 			default    	'~D'    # Deleted Mails"
